@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 typedef struct{
     char mediaTitle[100];
     float mediaRating;
@@ -97,7 +98,8 @@ int main(){
     }
 
     releaseEngagementMatrix(engagementMatrix, users);
-    releaseDev
+    releaseDeviceData(deviceMatrix, users, devices);
+    releaseContentMatrix(contentMatrix, categories, items);
 }
 
 double** allocateEngagementMatrix(int totalUsers, int totalCategories){
